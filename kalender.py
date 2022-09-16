@@ -43,7 +43,6 @@ def handelse():
         lbl = Label(NewWindow, text = "")
         lbl.pack()
         with open("event.txt", "a+") as file_object:
-            data = file_object.read(10000)
             file_object.write("\n" + "Date: " + cal.get_date() + " event: " + inp)           #Lägger till texten till slutet av filen
         NewWindow.destroy()
     #gör textruta att skriva händelser i
